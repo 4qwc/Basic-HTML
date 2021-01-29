@@ -1,0 +1,389 @@
+1.HTML - Document
+ ---------------------------------
+<!DOCTYPE html>  ประกาศใช้ HTML
+<head></head> กำหนดส่วนหัว
+
+//*****************
+
+กำหนดสไตล์ ตาราง
+<style>
+        teble, th, td {
+            border: 1px solid red;
+        }
+
+    </style>
+
+-------------
+<body>
+	*** ส่วนเนื้อหาต่างๆ
+</body>
+-----------------------------
+	ขนาดตัวอักษร
+    <h1>HELLO World</h1>  
+    <h2>HELLO World</h2>
+    <h3>HELLO World</h3>
+    <h4>HELLO World</h4>
+    <h5>HELLO World</h5>
+    <h6>HELLO World</h6>
+<p> 
+	ใส่เนื้อหาข้อความยาวๆ
+</p>
+*---------------------------
+<!-- การคอมเม้น -->
+
+-------------------------
+
+
+Tags  html
+
+<br> เว้นบรรทัด
+-----------------------
+ <!-- การคอมเม้น -->
+    
+
+    <b>Text</b>           <!--bold text-->
+    <br>                  <!--ขึ้นบรรทัดใหม่-->
+    <i>Text</i>           <!--- ตัวเอียง-->
+    <br>
+    <em>Text</em>         <!-- -->
+    <br>
+    <mark>Text</mark>     <!--มาค ตัวอักษร-->
+    <br>
+    <small>Text</small>   <!-- พิมพ์เล็ก-->
+    <br>
+
+    <del>TExt</del>  <!-- ลบ -->
+    <br>
+    <ins>Text</ins>  <!-- ขีดเส้นใต้ -->
+    <br>
+    <b>Text-1</b>
+    <sub>Text</sub> <!-- ตัวลอยด้านล่าง -->
+    <br>
+    <br>
+    <b>Text-2</b>
+    <sup>Text</sup>  <!-- ตัวลอยด้านบน -->
+-----------------------
+link html:
+
+		title="goto Google"//	กำหนด โชว์อักษรเมื่อเอาเม้าไปชี้
+	  <a title="goto Google" href="  กำหนดใส่ ลิ้งค์ "></a>
+	<a href="https://www.google.com/" target="_blank">ลิ้งค์คลิ๊กที่นี่</a>
+	 
+	target="_blank" คำสั่งให้เปิดแท็ปใหม่
+------------------------------------------------------------
+link img
+<img src="ใส่ลิ้งค์รูปภาพ" alt="ใส่ชื่อ"> 
+
+กำหนดลิงค์โดยนำ <a>มาครอบภาพ</a> ถ้าคลิกที่ภาพจะไปที่ลิ้งค์ทีกำหนดไว้ เช่น ตัวอย่าง
+<a href="https://www.youtube.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgolBdeaXdt7hZ4G28YiA8shOCg4jkBg08uA&usqp=CAU" alt="dog">
+</a>
+
+    <!-- กำหนดรูปภาพให้แสดงในเว็บ -->
+    <br>
+
+    <img src="img/L1.png" alt="หลอดไฟติด"><br>
+    <br>
+    <img src="img/L2.png" alt="หลอดไฟดับ"><br>
+    <br>
+    <img src="img/IMG_0214.png" alt=""><br>
+--------------------------------------------
+
+// กำหนด teble
+<!--************* TEBLE ****************--> 
+    <teble>
+
+        <tr>  <!-- ROW -สร้างข้อความในแถว-->
+            <th>Firstname</th> <!--th= teble header-->
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>kannatham</td> <!-- td= teble data-->
+            <td>meethamchai</td>
+            <td>30</td>
+        </tr>
+
+    </teble>
+
+*****************************************
+การใช้ list
+<style>
+        ul{
+            list-style: circle;//disc, circle, none
+        }
+    </style>
+
+<!-- List -->
+   	<ul> =  .list1
+		.list2
+		.list3
+		.list4
+		.list5
+
+	<ol> = 
+		1.list1
+		2.list2
+		3.list3
+		4.list4
+		5.list5
+	<uol>=
+		list1
+		list2
+		list3
+		list4
+		list5
+	
+        <li>List Data-1</li>
+        <li>List Data-2</li>
+        <li>List Data-3</li>
+        <li>List Data-4</li>
+        <li>List Data-5</li>
+
+    </ol>
+-----------
+*******  FORM *********
+การสร้าง ฟอร์ม หรือ หน้าต่างที่จะป้อนข้อมูล
+<body>
+
+    <form>// ส่วน กรอบ form
+        <fieldset>
+            <legend>
+                Form Data
+            </legend>
+        </fieldset>
+    </form>
+
+</body>
+----------------
+***  input  ***
+
+	   <label for="Data-1 input">Data1 input</label>
+            <input type="text" placeholder="Enter data-1...">
+            <br>
+            <label for="Data-2 input">Data2 input</label>
+            <input type="text" placeholder="Enter data-2...">
+            <br>
+            <label for="Data-3 input">Data3 input</label>
+            <input type="text" placeholder="Enter data-3...">
+            <br>	
+---------------------------------------
+**** Radio *****
+	            <!-- Radio -->
+            <label for="select">SELECT - NO, YES</label>
+            <br>
+            <input type="radio" name="select" value="NO!" checked>NO
+            <input type="radio" name="select" value="YES!"> YES
+            <br>
+            <br>
+--------------------------------------
+*** CHECKBOX ***           
+	    <!--  CHECKBOX -->
+            <br>
+            <label for="checkbox">CHECKBOX</label>
+            <br>
+            <input type="checkbox" value=data> Checkbox A
+            <input type="checkbox" value=data> Checkbox B
+            <input type="checkbox" value=data> Checkbox C
+
+
+*** Button ***          
+<input type="button" value=BUTTON> Button 1
+
+*** SUBMIT ***
+<input type="submit" value="SUBMIT"> Submit
+--------------------------------------
+*********<!-- BLOCK ELEMENTS, LINEELEMENTScc
+
+<link rel="stylesheet" href="style.css">
+    <style>
+        div{
+            background-color: slateblue;       
+        }
+        a{
+            background-color: tomato;
+        }
+    </style>
+
+</head>
+   <body>
+       <div>
+           block elements 1
+       </div><br>
+       <div>
+           block elements 2
+       </div><br>
+       <a href="#">inline elements 1</a><br>
+       <a href="#">inline elements 2</a><br>
+       <a href="#">inline elements 3</a><br>
+
+--------------------------------------
+***   	block elements
+	line elements   
+
+ <link rel="stylesheet" href="style.css">
+    <style>
+        div{ background-color: slateblue; }
+        a{ background-color: #cc00ff; }
+    </style>
+</head>
+   <body>
+          <div><h1>h1 block elements 1</h1></div>    
+          <div><h2>h2 block elements 2</h2></div>
+            
+          <a href="#">inline elements 1</a><br>
+          <a href="#"> inline elements 2</a><br>
+
+  </body>
+
+-----*********************************************
+การใช้งาน
+Class ******
+    <style>  * ปรับแต่งคลาส
+        .box{   // ชื่อ class
+            background-color: rgb(12, 12, 12);
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>BOX 1</h2>
+    </div>
+    <div class="box">
+        <h2>BOX 2</h2>
+    </div>
+    <div class="box">
+        <h2>BOX 3</h2>
+    </div>
+
+
+
+------------------------------------
+CSS - Selectors
+
+p{..
+  color:red  ใส่สี
+  font-size:18px   เพิ่มขนาดตัวอักษร
+   .}
+-----------------------
+CSS - Type Selectors
+-----------------------
+	css
+	div{...} ใช้ชื่อ Tags เขียนได้เลย
+-----------------------
+	HTML
+	<div>...</div>
+-----------------------	
+
+CSS - ID 
+	#Name ID  //ใส่ชื่ไอดีได้เลย
+HTML - ID
+	<div id="ใส่ชื่อไอดี">...</div>
+
+----------***********************
+การลิ้งไฟล์  CSS เข้ามาใช้ใน HTML
+
+<head>
+	<link ref="stysheet" href="ชื่อไฟล์.css">
+</head>
+------------------------------------
+คำสงวน เอ็นทีตี้ (Entity name)
+HTML Entities
+
+
+kannatham &amp; Meethamchai
+
+Result	Description	Entity Name	Entity Number
+non-breaking space	&nbsp;	&#160;
+<	less than	&lt;	&#60;
+>	greater than	&gt;	&#62;
+&	ampersand	&amp;	&#38;
+"	double quotation mark	&quot;	&#34;
+'	single quotation mark (apostrophe)	&apos;	&#39;
+¢	cent	&cent;	&#162;
+£	pound	&pound;	&#163;
+¥	yen	&yen;	&#165;
+€	euro	&euro;	&#8364;
+©	copyright	&copy;	&#169;
+®	registered trademark	&reg;	&#174;
+
+-------------------------------------
+การปรับแต่ง  style
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+            background-color: rgb(240, 217, 217);
+        }
+
+        header {
+            height: 50px;
+            background-color: seagreen;
+        }
+
+        nav {
+            height: 100px;
+            background-color: yellow;
+        }
+
+        section {
+            float: left;
+            width: 250px;
+            height: 120px;
+            background-color: violet;
+        }
+
+        aside {
+            float: left;
+            width: 250px;
+            height: 120px;
+            background-color: rgba(253, 69, 36, 0.61);
+        }
+
+        footer {
+            clear: both;
+            height: 150px;
+            color: rgb(255, 255, 255);
+            background-color: red;
+        }
+    </style>
+</head>
+ <body>
+    <h2>HTML-Semantics Elements</h2>
+    <!-- HTML-Semantics Elements
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure> 
+        <footer> 
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>
+
+    -->
+    <header>
+        Header
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <section>
+        Section
+    </section>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
+    
+   </body>
